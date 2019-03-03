@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--left nav link-->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">LATITUDE
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="temperature_weather.html">Max Temperature</a>
+                            </li>
+                            <li>
+                                <a href="humidity_weather.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="windiness.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="weatherdata.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--Main Grid-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-box">
+                    <h1 class="main-pg-header"><strong>Summary: Latitude vs. X</strong></h1>
+                    <hr>
+                    <div class="summary">
+                        <img id="main-img" src="Resources/assets/images/Fig1.png" , class="img img-responsive" , alt="Temp vs Latitude">
+                        <p>
+                            In this project, the goal was to analyze how temperature changes in different locations when a location approaches the equator. To do this, the OpenWeather API was used to collect data on 500 cities.
+                        </p>
+                        <p>
+                            To reach the conclusions, python's MatPlotLib and Pandas pacakges were used to analzye data on 500 cities. The visualizations produced looked at the four following factors: cloudiness, humidity, windiness, and temperature. The four visualizations can be explored further on the "Visualizations" tab.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-5">
+                <div class = "side-box">
+                    <h2 class = "main-pg-subheader"><strong>Visualizations</strong></h2>
+                    <hr>
+                    <div class = "sidebar">
+                        <a href="temperature_weather.html"><img id="side-img1" src="Resources/assets/images/Fig1.png" , class="img img-responsive" ,alt="Temp vs. Latitude"></a>
+                        <a href="humidity_weather.html"><img id="side-img2" src="Resources/assets/images/Fig2.png" , class="img img-responsive" , alt="Humidity vs. Latitude"></a>
+                        <a href="cloudiness.html"><img id="side-img3" src="Resources/assets/images/Fig3.png" , class="img img-responsive" , alt="Cloudiness vs. Latitude"></a>
+                        <a href="windiness.html"><img id="side-img4" src="Resources/assets/images/Fig4.png" , class="img img-responsive" ,alt="Wind Speed vs. Latitude"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class= "modal-footer">
+        <p>
+            This page is hosted on Github. &emsp;
+            <a target="_blank" href="https://github.com/cmilli34/htmlcsshomework">
+                Web page repo link.
+            </a> &emsp;
+
+            <a target="_blank" href="https://github.com/cmilli34">See more projects here</a>
+            &emsp; Contact: carolinemiller@fastmail.fm
+        </p>
+    </div>
+</body>
+</html>
